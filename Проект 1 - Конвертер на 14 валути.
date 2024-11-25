@@ -1,0 +1,251 @@
+#Напиши програма за конверзија на следниве валути во македонски денар:
+#Евро,Американски Долар, Британска Фунта, Швајцарски Франк, Шведска Круна, Норвешка Круна,Канадски Долар,Австралиски Долар, Јапонски Јен, Бугарски Лев,Турска Лира, Чешка Круна, Унгарски Форинт,Полска Злота
+
+print("Добредојдовте во програмата - конвертер на 14 валути. Направена од Андреј Ангеловски. :)")
+print("КАКВА КОНВЕРЗИЈА САКАТЕ ДА НАПРАВИТЕ:")
+
+def euro_to_macedonian(euro):
+    return euro * 61.8
+def macedonian_to_euro(denar):
+    return denar / 61.8
+print("1. Евро - Македонски Денар.")
+print("2. Македонски Денар - Евро.")
+print("\n")
+
+def dollar_to_macedonian(dollar):
+    return dollar * 58.67
+def macedonian_to_dollar(denar):
+    return denar / 58.67
+print("3. Американски Долар - Македонски Денар.")
+print("4. Македонски Денар - Американски Долар.")
+print("\n")
+
+def pound_to_macedonian(funta):
+    return funta * 71.77
+def macedonian_to_pound(denar):
+    return denar / 71.77
+print("5. Британска Фунта - Македонски Денар.")
+print("6. Македонски Денар - Британска Фунта.")
+print("\n")
+
+def svajcarski_to_macedonian(frank):
+    return frank * 63.77
+def macedonian_to_svajcarski(denar):
+    return denar / 63.77
+print("7. Швајцарски Франк - Македонски Денар.")
+print("8. Македонски Денар - Швајцарски Франк.")
+print("\n")
+
+def svedska_to_macedonian(kruna):
+    return kruna * 5.32
+def macedonian_to_svedska(denar):
+    return denar / 5.32
+print("9. Шведска Круна - Македонски Денар.")
+print("10. Македонски Денар - Шведска Круна.")
+print("\n")
+
+def norwegian_to_macedonian(kruna):
+    return kruna * 5.17
+def macedonian_to_norwegian(denar):
+    return denar / 5.17
+print("11. Норвешка Круна - Македонски Денар.")
+print("12. Македонски Денар - Норвешка Круна.")
+print("\n")
+
+def danish_to_macedonian(kruna):
+    return kruna * 8.18
+def macedonian_to_danish(denar):
+    return denar / 8.18
+print("13. Данска Круна - Македонски Денар.")
+print("14. Македонски Денар в- Данска Круна.")
+print("\n")
+
+def canadian_to_macedonian(dollar):
+    return dollar * 40.27
+def macedonian_to_canadian(denar):
+    return denar / 40.27
+print("15. Канадски Долар - Македонски Денар.")
+print("16. Македонски Денар - Канадски Долар.")
+print("\n")
+
+def australian_to_macedonian(dollar):
+    return dollar * 36.47
+def macedonian_to_australian(denar):
+    return denar / 36.47
+print("17. Австралиски Долар - Македонски Денар.")
+print("18. Македонски Денар - Австралиски Долар.")
+print("\n")
+
+def japanese_to_macedonian(yen):
+    return yen * 0.37
+def macedonian_to_japanese(denar):
+    return denar / 0.37
+print("19. Јапонски Јен - Македонски Денари.")
+print("20. Македонски Денар - Јапонски Јен.")
+print("\n")
+
+def bulgarian_to_macedonian(lev):
+    return lev * 31.8
+def macedonian_to_bulgarian(denar):
+    return denar / 31.8
+print("21. Бугарски Лев - Македонски Денар.")
+print("22. Македонски Денар - Бугарски Лев.")
+print("\n")
+
+def turkish_to_macedonian(lira):
+    return lira * 1.71
+def macedonian_to_turkish(denar):
+    return denar / 1.71
+print("23. Турска Лира - Македонски Денар.")
+print("24. Македонски Денар - Турска Лира.")
+print("\n")
+
+def czech_to_macedonian(kruna):
+    return kruna * 2.45
+def macedonian_to_czech(denar):
+    return denar / 2.45
+print("25. Чешка Круна - Македонски Денар.")
+print("26. Македонски Денар - Чешка Круна.")
+print("\n")
+
+def hungarian_to_macedonian(forint):
+    return forint * 0.16
+def macedonian_to_hungarian(denar):
+    return denar / 0.16
+print("26. Унгарски Форинт - Македонски Денар.")
+print("27. Македонски Денар - унгарски Форинт.")
+print("\n")
+
+def polish_to_macedonian(zlota):
+    return zlota * 14.46
+def macedonian_to_polish(denar):
+    return denar / 14.46
+print("28. Полска Злота - Македонски Денар.")
+print("29. Македонски Денар - Полска Злота.")
+print("\n")
+
+
+y = input("Внеси го бројот согласно конверзијата посакувана: ")
+
+if y == '1':
+    euro = float(input("Колку евра сакате да смените во денари:"))
+    denar = euro_to_macedonian(euro)
+    print(f"{euro} евра изнесуваат {denar:.2f} македонски денари.")
+elif y == '2':
+    denar = float(input("Колку денари сакате да смените во евра:"))
+    euro = macedonian_to_euro(denar)
+    print(f"{denar} денари изнесуваат {euro:.2f} евра.")
+elif y == '3':
+    dollar = float(input("Колку долари сакате да смените:"))
+    denar = dollar_to_macedonian(dollar)
+    print(f"{dollar} Американски Долари изнесуваат {denar} Македонски Денари.")
+elif y == '4':
+    denar = float(input("Колку денари сакате да смените во долари:"))
+    dollar = macedonian_to_dollar(denar)
+    print(f"{denar} Македонски денари изнесуваат {dollar} Американски Долари.")
+elif y == '5':
+    funta = float(input("Внеси колку фунти сакаш да смениш во денари:"))
+    denar = pound_to_macedonian(funta)
+    print(f"{funta} Британски фунти изнесуваат {denar} македонски денари.")
+elif y == '6':
+    denar = float(input("Внеси колку денари сакаш да смениш фо фунти:"))
+    funta = macedonian_to_pound(denar)
+    print(f"{denar} денари изнесуваат {funta} британска фунта.")
+elif y == '7':
+    frank = float(input("Внеси колку швајцарски франци сакаш да смениш:"))
+    denar = svajcarski_to_macedonian(frank)
+    print(f"{frank} швајцарски франци изнесува {denar} македонски денари.")
+elif y == '8':
+    denar = float(input("Внеси колку денари сакаш да смениш во швајцарски франци:"))
+    frank = macedonian_to_svajcarski(denar)
+    print(f"{denar} денари изнесуваат {frank} швајцарски франци.")
+elif y == '9':
+    kruna = float(input("Внеси колку шведски круни би сакал да смениш во денари:"))
+    denar = svedska_to_macedonian(kruna)
+    print(f"{kruna} шведски круни изнесуваат {denar} македонски денари.")
+elif y == '10':
+    denar = float(input("Внеси колку македонски денари би сакал да смениш во шведски круни:"))
+    kruna = macedonian_to_svedska(denar)
+    print(f"{denar} македонски денари изнесуваат {kruna} шведски круни.")
+elif y == '11':
+    kruna = float(input("Внеси колку норвешки круни сакаш да смениш во денари:"))
+    denar = norwegian_to_macedonian(kruna)
+    print(f"{kruna} норвешки круни изнесуваат {denar} македонски денари.")
+elif y == '12':
+    denar = float(input("Внеси колку денари сакаш да смениш во норвешки круни:"))
+    kruna = macedonian_to_norwegian(denar)
+    print(f"{denar} македонски денари изнесуваат {kruna} норвешки круни.")
+elif y == '13':
+    kruna = float(input("Внеси колку дански круни сакаш да смениш во македонски денари:"))
+    denar = danish_to_macedonian(kruna)
+    print(f"{kruna} дански круни изнесуваат {denar} македонски денари.")
+elif y == '14':
+    denar = float(input("Внеси колку денари сакаш да смениш во дански круни:"))
+    kruna = macedonian_to_danish(denar)
+    print(f"{denar} македонски денари изнесуваат {kruna} дански круни.")
+elif y == '15':
+    dollar = float(input("Внеси колку канадски долари сакаш да смениш во македонски денари:"))
+    denar = canadian_to_macedonian(dollar)
+    print(f"{dollar} канадски долари изнесуваат {denar} македонски денари.")
+elif y == '16':
+    denar = float(input("Внеси колку македонски денари сакаш да смениш во канадски долари:"))
+    dollar = macedonian_to_canadian(denar)
+    print(f"{denar} македонски денари изнесуваат {dollar} канадски долари.")
+elif y == '17':
+    dollar = float(input("Внеси колку австралиски долари сакаш да смениш во денари:"))
+    denar = australian_to_macedonian(dollar)
+    print(f"{dollar} австралиски долари изнесуваат {denar} македонски денари.")
+elif y == '18':
+    denar = float(input("Внеси колку денари сакаш да смениш во австралиски долари:"))
+    dollar = macedonian_to_australian(denar)
+    print(f"{denar} македонски денари изнесуваат {dollar} австралиски долари.")
+elif y == '19':
+    yen = float(input("Внеси колку јапонски јени сакаш да смениш во денари:"))
+    denar = japanese_to_macedonian(yen)
+    print(f"{yen} јапонски јени изнесуваат {denar} македонски денари.")
+elif y == '20':
+    denar = float(input("Внеси колку денари сакаш да смениш во јапонски јени:"))
+    yen = macedonian_to_japanese(denar)
+    print(f"{denar} македонски денари изнесуваат {yen} јапонски јени.")
+elif y == '21':
+    lev = float(input("Внеси колку бугарски левови сакаш да смениш во денари:"))
+    denar = bulgarian_to_macedonian(lev)
+    print(f"{lev} бугарски левови изнесуваат {denar} македонски денари.")
+elif y == '22':
+    denar = float(input("Внеси колку денари сакаш да смениш во левови:"))
+    lev = macedonian_to_bulgarian(denar)
+    print(f"{denar} македонски денари изнесуваат {lev} бугарски левови.")
+elif y == '23':
+    lira = float(input("Внеси колку турски лири сакаш да смениш во македонски денари:"))
+    denar = turkish_to_macedonian(lira)
+    print(f"{lira} турски лири изнесуваат {denar} македонски денари.")
+elif y == '24':
+    denar = float(input("Внеси колку денари сакаш да смениш во лири:"))
+    lira = macedonian_to_turkish(denar)
+    print(f"{denar} македонски денари изнесуваат {lira} турски лири.")
+elif y == '25':
+    kruna = float(input("Внеси колку чешки круни сакаш да смениш во денари:"))
+    denar = czech_to_macedonian(kruna)
+    print(f"{kruna} чешки круни изнесуваат {denar} македонски денари.")
+elif y == '26':
+    denar = float(input("Внеси колку денари сакаш да смениш во чешки круни:"))
+    kruna = macedonian_to_czech(denar)
+    print(f"{denar} македонски денарии изнесуваат {kruna} чешки круни.")
+elif y == '27':
+    forint = float(input("Внеси колку унгарски форинти сакаш да смени во денари:"))
+    denar = hungarian_to_macedonian(forint)
+    print(f"{forint} унагарски форинти изнесуваат {denar} македонски денари.")
+elif y == '28':
+    denar = float(input("Внеси колку денари сакаш да смениш во унгарски форинти:"))
+    forint = macedonian_to_hungarian(denar)
+    print(f"{denar} македонски денари изнесуваат {forint} унгарски форинти.")
+elif y == '29':
+    zlota = float(input("Внеси колку полски злоти сакаш да смениш во македонски денари:"))
+    denar = polish_to_macedonian(zlota)
+    print(f"{zlota} полски злоти изнесуваат {denar} македонски денари.")
+elif y == '30':
+    denar = float(input("Внеси колку денари сакаш да смениш во полски злоти:"))
+    zlota = macedonian_to_polish(denar)
+    print(f"{denar} македонски денари изнесуваат {zlota} полски злоти.")
+else:
+    print("Невалиден податок внесен. Пробајте пак.")
